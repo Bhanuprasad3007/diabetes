@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Diabetes Prediction Test</h2>
+        <form method="POST">
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" required>
+
+            <label for="BMI">BMI:</label>
+            <input type="number" step="any" id="BMI" name="BMI" required>
+
+            <label for="Insulin">Insulin:</label>
+            <input type="number" id="Insulin" name="Insulin" required>
+
+            <label for="Glucose">Glucose Level:</label>
+            <input type="number" id="Glucose" name="Glucose" required>
+
+            <label for="FamilyHistory">Family History of Diabetes:</label>
+            <select id="FamilyHistory" name="FamilyHistory" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
